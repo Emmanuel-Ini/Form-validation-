@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta width="device-width">
+     
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">-->
+
+
+    <title>FORM</title>
+    </head>
+    <body>
+  
+
+<div class="container">
+  
+  <form id="form" action="home.htm"> 
+  <div class="bg-img">
+   <h2>Create Account</h2>
+   
+<!--<fieldset>-->
+ <!--<legend>Personal Info</legend>
+-->
+<div class="inputControl">
+ <label for="username"></label> 
+  <input type="text" name="username" id="username"   placeholder="Enter your username"/>
+  <div class="error"></div>
+  </div>
+
+<div class="inputControl">
+ <label for="email"></label> 
+  <input type="email" name="email" id="email" placeholder="Enter your email"/>
+  <div class="error"></div>
+  </div>
+  
+  
+  
+<div class="inputControl">
+ <label for="password"></label> 
+  <input type="password" name="password" id="password"placeholder="Enter your password"/>
+
+  <div class="error"></div>
+  </div>
+  
+   <div class="check">
+  <input type="checkbox" name="password" id="passwordcheck" onclick="togglePassword()"><p>Show password</p>
+  </div>
+ 
+<div class="inputControl">
+ <label for="password2"></label> 
+  <input type="password" name="password2" id="password2" placeholder="Confim your password"/>
+   
+  <div class="error"></div>
+  </div>
+  
+   <div class="check">
+   <input type="checkbox" name="password2" id="passwordcheck2"value="pswcheck2" onclick="togglePassword2()"><p>Show password</p></div>
+<div class="inputControl">
+<button id="submit" type="submit"
+ >Sign Up</button>
+<p class="signin">Already have an account?<a href="home.htm"> Sign in</a></p>
+
+    </fieldset>
+       </form>
+    </div></div>
+  <script src="main.js"></script>
+  </body>
+</html>
